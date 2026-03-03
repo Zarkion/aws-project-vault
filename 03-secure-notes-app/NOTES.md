@@ -1,13 +1,15 @@
 # Notes – <Module 3: Secure Notes App>
 
 ## Topics
--
+-Tech → AWS Project Vault → Project 3: Secure Notes (Auth)
 
 ## Resources
 -
 
 ## Notes (my takeaways)
-- 
+- Built a JWT‑secured serverless Notes API on AWS using Cognito (User Pool), API Gateway (Cognito authorizer), Lambda, and DynamoDB with per‑user isolation, clean error handling, and least‑privilege IAM; optional S3 attachments via presigned URLs.
+- What I learned about JWTs and authorizers: JWTs are the basis of constant user authentication. Authorizers issue JWTs upon successful authentication of a client. 
+- Biggest blockers: the JSON serializer was unable to handle the Decimal output of the time columns, so to make it work I had to cast them as strings before saving. Should this data be required in other microservices, it would need to be cast as an int before usage.
 
 
 ## Habit-Checkin
