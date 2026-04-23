@@ -77,6 +77,34 @@ rather than generic IoT telemetry patterns.
 
 ---
 
+## Sample Queries
+
+### Abnormal heart rate readings
+
+Retrieves all heart rate observations outside the normal range of 60–100 bpm,
+ordered chronologically. Demonstrates clinical threshold filtering on FHIR-structured
+data.
+
+![Abnormal heart rate query results](screenshots/query_abnormal_heart_rate.png)
+
+### Latest observation per patient per measurement type
+
+Returns the single most recent reading for each patient and measurement type using
+a window function. Demonstrates correct handling of multiple readings per patient —
+a common requirement in clinical decision support.
+
+![Latest observation per patient query results](screenshots/query_latest_observation_per_patient.png)
+
+### SpO2 readings below hypoxia alert threshold
+
+Retrieves all pulse oximetry readings below 95%, ordered by severity. Values below
+95% indicate hypoxia and would trigger a clinical alert in a production monitoring
+system.
+
+![SpO2 hypoxia alert threshold query results](screenshots/query_hypoxia_alert_threshold.png)
+
+---
+
 ## Screenshots
 
 See `/screenshots` for images of the running system.
