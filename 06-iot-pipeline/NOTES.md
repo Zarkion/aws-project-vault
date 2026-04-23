@@ -1,7 +1,8 @@
-# Notes – <Module X: Project Name>
+# Notes – Simulated FHIR Ingestion
 
 ## Topics
-- Built a serverless IoT analytics pipeline on AWS (IoT Core → Firehose → S3 → Athena) with least‑privilege IAM, buffered ingestion, and ad‑hoc SQL analytics; designed for partitioned storage and Parquet/QuickSight upgrades.
+- Built a HIPAA-conscious clinical device telemetry pipeline on AWS (IoT Core → Kinesis Firehose → S3 → Athena) ingesting FHIR R4 Observation resources from simulated patient monitors; implemented least-privilege IAM at every service boundary mapping to HIPAA Technical Safeguard requirements §164.312(a)(b)(e).
+- 
 
 ## Resources
 -
@@ -11,3 +12,4 @@
 
 ## Habit-Checkin
 - 2025-08-23 — 50 min — What worked / Next step:
+- 
